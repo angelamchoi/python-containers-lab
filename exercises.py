@@ -3,12 +3,24 @@
 # Print out the second student's name.
 # Print out the last student's name.
 
+students = ['Beyonce', 'Drake', 'Nas']
+print(students[1]) #2nd student's name
+print(students[-1]) #last student
+
 # Exercise 2
 # Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
 # Use a for loop to print out the string "food goes here is a good food".
 
+foods = ('sushi', 'pizza', 'icecream')
+for food in foods: 
+  print(f"{food} is a good food!")
+
 # Exercise 3
 # Using a for loop, print just the last two food strings from foods.
+
+foods = ('sushi', 'pizza', 'icecream')
+for food in foods[-2:]: #prints last 2 food strings
+  print(food)
 
 # Exercise 4
 # Create a dictionary named home_town containing the keys of city, state and population.
