@@ -27,11 +27,22 @@ for food in foods[-2:]: #prints last 2 food strings
 # Print a string with this format:
 # "I was born in city, state - population of population"
 
+home_town={
+  'city': 'New York City',
+  'state': 'New York',
+  'population': 800000
+}
+
+print(f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}")
+
 # Exercise 5
 # Iterate over the key: value pairs in home_town and print a string for each item, for example:
 # "city = Arcadia"
 # "state = California"
 # "population = 58000"
+
+for one, two in home_town.items():
+  print(f"{one} = {two}")
 
 # Exercise 6
 # Create an empty list named cohort.
