@@ -46,7 +46,6 @@ for one, two in home_town.items():
 
 # Exercise 6
 # Create an empty list named cohort.
-
 # Using a for loop, add one dictionary to the cohort list for each student name. Each dictionary should have this shape:
 
 #  {
@@ -54,6 +53,21 @@ for one, two in home_town.items():
 #    'fav_food' 'Cheeseburger'
 #  }
 # Iterate over cohort printing out each element.
+
+cohort =[]
+students = ['Beyonce', 'Drake', 'Nas']
+
+for index, student in enumerate(students):
+  cohort.append({
+    'student': student,
+    'fav_food': foods[index]
+  })
+for student in cohort:
+  print(student)
+
+###Notes
+# I originally tried without for in enumerate loop and found my mistake. If you don't use for in enumerate each student will have all foods listed as their favorite foods.
+
 
 # Exercise 7
 # Using the list of students and list comprehension, assign to a variable named awesome_students a new list containing strings similar to this:
